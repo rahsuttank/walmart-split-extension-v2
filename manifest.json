@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Walmart Order Splitter",
+  "description": "Extract and split your Walmart orders with friends",
+  "version": "1.0",
+  "permissions": ["scripting", "activeTab", "tabs"],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "icons/icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.walmart.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "host_permissions": [
+    "https://www.walmart.com/*"
+  ]
+}
