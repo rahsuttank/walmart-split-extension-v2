@@ -60,6 +60,20 @@ walmart-split-extension/
 
 ---
 
+## In-Store Receipts
+
+If you made a purchase directly in a Walmart store and not through the website or app:
+
+1. Open the **Walmart App** on your phone and go to **Receipts**.
+2. Tap **Scan Receipt** and follow the prompts to capture your printed receipt.
+3. Once scanned, the receipt will appear under **Purchases** in the app.
+4. On your desktop, navigate to the **Purchases** section of your Walmart account where your scanned in-store purchases are listed.
+5. Open the details for the scanned receipt and then click the **Walmart Order Splitter** extension icon.
+6. The extension will scrape the itemized receipt data just like it does for online orders.
+7. Proceed with entering participants, assigning items, and exporting the CSV as normal.
+
+---
+
 ## Customization
 
 - **Selectors**: If Walmart’s DOM changes, update the selectors in `content.js` to match new `data-testid` or class names.
